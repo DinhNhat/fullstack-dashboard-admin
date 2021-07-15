@@ -1,0 +1,32 @@
+{
+  "name": "dashboard-admin-fullstack",
+  "version": "1.0.0",
+  "description": "fullstack react",
+  "main": "server.js",
+  "scripts": {
+    "build": "babel ./src --out-dir ./build",
+    "start": "node ./build/server.js",
+    "dev": "npx nodemon --exec npx babel-node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nhat Dinh",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.14.0",
+    "body-parser": "^1.19.0",
+    "connect-history-api-fallback": "^1.6.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.7",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/node": "^7.13.13",
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "@babel/preset-env": "^7.14.1",
+    "nodemon": "^2.0.7"
+  }
+}
